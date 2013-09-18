@@ -481,6 +481,37 @@
         <image name="scene 6-07.png" width="1025" height="769"/>
         <image name="scene1-06.png" width="1025" height="769"/>
     </resources>
+    <classes>
+        <class className="DGFirstViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/DGFirstViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="buttonStart:"/>
+            </relationships>
+        </class>
+        <class className="DGFourthViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/DGFourthViewController.h"/>
+        </class>
+        <class className="DGSecondViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/DGSecondViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="browse_file_1:"/>
+                <relationship kind="action" name="browse_file_2:"/>
+                <relationship kind="action" name="browse_file_3:"/>
+                <relationship kind="action" name="submitButton:"/>
+                <relationship kind="outlet" name="firstImage" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="name" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="secondImage" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="thirdImage" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="winkel" candidateClass="UITextField"/>
+            </relationships>
+        </class>
+        <class className="DGThirdViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/DGThirdViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="timeRemaining" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar" statusBarStyle="blackTranslucent"/>
         <simulatedOrientationMetrics key="orientation"/>
