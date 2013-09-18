@@ -24,14 +24,13 @@
     return self;
 }
 
+- (void)awakeFromNib {
+
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    int Number = 1;
-    NSString *Joko = @"NAma";
-    NSString *Nama = @"Joko";
-    NSString *SayHello = [NSString stringWithFormat:@"HI !!!! %d %@ %@", Number, Joko, Nama];
-    NSLog(@"%@",SayHello);
 	// Do any additional setup after loading the view.
 }
 
