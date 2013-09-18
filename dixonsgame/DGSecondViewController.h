@@ -8,9 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface DGSecondViewController : UIViewController {
-    NSString *SayHello;
-}
+@interface DGSecondViewController : UIViewController
 - (IBAction)browse_file_1:(id)sender;
 - (IBAction)browse_file_2:(id)sender;
 - (IBAction)browse_file_3:(id)sender;

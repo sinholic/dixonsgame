@@ -26,6 +26,20 @@
 		0187A2B417E843E4003219A5 /* libGoogleAnalytics.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0187A2AE17E843E4003219A5 /* libGoogleAnalytics.a */; };
 		0187A2B517E843E4003219A5 /* GTMNSString+HTML.m in Sources */ = {isa = PBXBuildFile; fileRef = 0187A2B117E843E4003219A5 /* GTMNSString+HTML.m */; };
 		0187A2B617E843E4003219A5 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 0187A2B317E843E4003219A5 /* MBProgressHUD.m */; };
+		8F4A9A8E17E98FE00005FC92 /* button start-07.png in Resources */ = {isa = PBXBuildFile; fileRef = 8F4A9A8C17E98FE00005FC92 /* button start-07.png */; };
+		8F4A9A8F17E98FE00005FC92 /* scene1-06.png in Resources */ = {isa = PBXBuildFile; fileRef = 8F4A9A8D17E98FE00005FC92 /* scene1-06.png */; };
+		8F4A9A9117E991810005FC92 /* scene 2-09.png in Resources */ = {isa = PBXBuildFile; fileRef = 8F4A9A9017E991810005FC92 /* scene 2-09.png */; };
+		8F4A9A9317E992160005FC92 /* button-pick-image-10.png in Resources */ = {isa = PBXBuildFile; fileRef = 8F4A9A9217E992160005FC92 /* button-pick-image-10.png */; };
+		8F4A9A9517E99B3B0005FC92 /* scene 4-14.png in Resources */ = {isa = PBXBuildFile; fileRef = 8F4A9A9417E99B3B0005FC92 /* scene 4-14.png */; };
+		8F4A9A9717E99D120005FC92 /* klaar-button-16.png in Resources */ = {isa = PBXBuildFile; fileRef = 8F4A9A9617E99D120005FC92 /* klaar-button-16.png */; };
+		8F4A9A9917E99F110005FC92 /* scene 5-09.png in Resources */ = {isa = PBXBuildFile; fileRef = 8F4A9A9817E99F110005FC92 /* scene 5-09.png */; };
+		8F4A9A9B17E99F3E0005FC92 /* scene 6-07.png in Resources */ = {isa = PBXBuildFile; fileRef = 8F4A9A9A17E99F3E0005FC92 /* scene 6-07.png */; };
+		8F4A9AA217E99F9D0005FC92 /* button-back-to-start-08.png in Resources */ = {isa = PBXBuildFile; fileRef = 8F4A9A9C17E99F9D0005FC92 /* button-back-to-start-08.png */; };
+		8F4A9AA317E99F9D0005FC92 /* button-pick-video-10.png in Resources */ = {isa = PBXBuildFile; fileRef = 8F4A9A9D17E99F9D0005FC92 /* button-pick-video-10.png */; };
+		8F4A9AA417E99F9D0005FC92 /* button-start-active-14.png in Resources */ = {isa = PBXBuildFile; fileRef = 8F4A9A9E17E99F9D0005FC92 /* button-start-active-14.png */; };
+		8F4A9AA517E99F9D0005FC92 /* button-submit-video-11.png in Resources */ = {isa = PBXBuildFile; fileRef = 8F4A9A9F17E99F9D0005FC92 /* button-submit-video-11.png */; };
+		8F4A9AA617E99F9D0005FC92 /* button-verder-active-12.png in Resources */ = {isa = PBXBuildFile; fileRef = 8F4A9AA017E99F9D0005FC92 /* button-verder-active-12.png */; };
+		8F4A9AA717E99F9D0005FC92 /* button-verder-inactive-13.png in Resources */ = {isa = PBXBuildFile; fileRef = 8F4A9AA117E99F9D0005FC92 /* button-verder-inactive-13.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -65,6 +79,20 @@
 		0187A2B117E843E4003219A5 /* GTMNSString+HTML.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "GTMNSString+HTML.m"; sourceTree = "<group>"; };
 		0187A2B217E843E4003219A5 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
 		0187A2B317E843E4003219A5 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		8F4A9A8C17E98FE00005FC92 /* button start-07.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button start-07.png"; sourceTree = "<group>"; };
+		8F4A9A8D17E98FE00005FC92 /* scene1-06.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "scene1-06.png"; sourceTree = "<group>"; };
+		8F4A9A9017E991810005FC92 /* scene 2-09.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "scene 2-09.png"; sourceTree = "<group>"; };
+		8F4A9A9217E992160005FC92 /* button-pick-image-10.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button-pick-image-10.png"; sourceTree = "<group>"; };
+		8F4A9A9417E99B3B0005FC92 /* scene 4-14.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "scene 4-14.png"; sourceTree = "<group>"; };
+		8F4A9A9617E99D120005FC92 /* klaar-button-16.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "klaar-button-16.png"; sourceTree = "<group>"; };
+		8F4A9A9817E99F110005FC92 /* scene 5-09.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "scene 5-09.png"; sourceTree = "<group>"; };
+		8F4A9A9A17E99F3E0005FC92 /* scene 6-07.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "scene 6-07.png"; sourceTree = "<group>"; };
+		8F4A9A9C17E99F9D0005FC92 /* button-back-to-start-08.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button-back-to-start-08.png"; sourceTree = "<group>"; };
+		8F4A9A9D17E99F9D0005FC92 /* button-pick-video-10.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button-pick-video-10.png"; sourceTree = "<group>"; };
+		8F4A9A9E17E99F9D0005FC92 /* button-start-active-14.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button-start-active-14.png"; sourceTree = "<group>"; };
+		8F4A9A9F17E99F9D0005FC92 /* button-submit-video-11.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button-submit-video-11.png"; sourceTree = "<group>"; };
+		8F4A9AA017E99F9D0005FC92 /* button-verder-active-12.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button-verder-active-12.png"; sourceTree = "<group>"; };
+		8F4A9AA117E99F9D0005FC92 /* button-verder-inactive-13.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button-verder-inactive-13.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +155,20 @@
 		0187A20717E820A7003219A5 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				8F4A9A9C17E99F9D0005FC92 /* button-back-to-start-08.png */,
+				8F4A9A9D17E99F9D0005FC92 /* button-pick-video-10.png */,
+				8F4A9A9E17E99F9D0005FC92 /* button-start-active-14.png */,
+				8F4A9A9F17E99F9D0005FC92 /* button-submit-video-11.png */,
+				8F4A9AA017E99F9D0005FC92 /* button-verder-active-12.png */,
+				8F4A9AA117E99F9D0005FC92 /* button-verder-inactive-13.png */,
+				8F4A9A9A17E99F3E0005FC92 /* scene 6-07.png */,
+				8F4A9A9817E99F110005FC92 /* scene 5-09.png */,
+				8F4A9A9617E99D120005FC92 /* klaar-button-16.png */,
+				8F4A9A9417E99B3B0005FC92 /* scene 4-14.png */,
+				8F4A9A9217E992160005FC92 /* button-pick-image-10.png */,
+				8F4A9A9017E991810005FC92 /* scene 2-09.png */,
+				8F4A9A8C17E98FE00005FC92 /* button start-07.png */,
+				8F4A9A8D17E98FE00005FC92 /* scene1-06.png */,
 				0187A20817E820A7003219A5 /* dixonsgame-Info.plist */,
 				0187A20917E820A7003219A5 /* InfoPlist.strings */,
 				0187A20C17E820A7003219A5 /* main.m */,
@@ -239,6 +281,20 @@
 				0187A21517E820A7003219A5 /* Default@2x.png in Resources */,
 				0187A21717E820A7003219A5 /* Default-568h@2x.png in Resources */,
 				0187A22A17E8210D003219A5 /* Ipad.storyboard in Resources */,
+				8F4A9A8E17E98FE00005FC92 /* button start-07.png in Resources */,
+				8F4A9A8F17E98FE00005FC92 /* scene1-06.png in Resources */,
+				8F4A9A9117E991810005FC92 /* scene 2-09.png in Resources */,
+				8F4A9A9317E992160005FC92 /* button-pick-image-10.png in Resources */,
+				8F4A9A9517E99B3B0005FC92 /* scene 4-14.png in Resources */,
+				8F4A9A9717E99D120005FC92 /* klaar-button-16.png in Resources */,
+				8F4A9A9917E99F110005FC92 /* scene 5-09.png in Resources */,
+				8F4A9A9B17E99F3E0005FC92 /* scene 6-07.png in Resources */,
+				8F4A9AA217E99F9D0005FC92 /* button-back-to-start-08.png in Resources */,
+				8F4A9AA317E99F9D0005FC92 /* button-pick-video-10.png in Resources */,
+				8F4A9AA417E99F9D0005FC92 /* button-start-active-14.png in Resources */,
+				8F4A9AA517E99F9D0005FC92 /* button-submit-video-11.png in Resources */,
+				8F4A9AA617E99F9D0005FC92 /* button-verder-active-12.png in Resources */,
+				8F4A9AA717E99F9D0005FC92 /* button-verder-inactive-13.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -384,6 +440,7 @@
 				0187A21C17E820A7003219A5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
