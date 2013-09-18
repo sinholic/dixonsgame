@@ -9,10 +9,23 @@
 #import "DGFourthViewController.h"
 
 @interface DGFourthViewController ()
+@property NSTimer *countdownTimer;
+@property int secondsCount;
 
 @end
 
 @implementation DGFourthViewController
+
+- (void)countTimer {
+    self.secondsCount = 60;
+    self.countdownTimer = [NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(timerRun) userInfo:nil repeats:YES];
+}
+
+- (void)timerRun {
+    self.secondsCount = self.secondsCount - 1;
+    NSString *timeRemaining = [NSString stringWithFormat:@"Nog %2d seconden ", self.secondsCount];
+    self.timeRemaining.text = timeRemaining;
+}
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -26,6 +39,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    [self countTimer];
 	// Do any additional setup after loading the view.
 }
 

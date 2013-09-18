@@ -13,9 +13,7 @@
 - (IBAction)browse_file_2:(id)sender;
 - (IBAction)browse_file_3:(id)sender;
 - (IBAction)submitButton:(id)sender;
-@property (nonatomic) IBOutlet UITextField *name;
-@property (nonatomic) IBOutlet UITextField *winkel;
-@property (nonatomic) IBOutlet UITextField *firstImage;
-@property (nonatomic) IBOutlet UITextField *secondImage;
-@property (nonatomic) IBOutlet UITextField *thirdImage;
+@property (nonatomic) IBOutlet UIButton *firstImage;
+@property (nonatomic) IBOutlet UIButton *secondImage;
+@property (nonatomic) IBOutlet UIButton *thirdImage;
 @end

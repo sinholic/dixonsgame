@@ -9,5 +9,4 @@
 #import <UIKit/UIKit.h>
 
 @interface DGThirdViewController : UIViewController
-@property (nonatomic) IBOutlet UILabel *timeRemaining;
 @end
