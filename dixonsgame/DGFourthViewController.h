@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface DGFourthViewController : UIViewController
+@property (nonatomic) IBOutlet UILabel *timeRemaining;
 
 @end

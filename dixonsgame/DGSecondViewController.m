@@ -38,17 +38,14 @@
 }
 
 - (IBAction)browse_file_1:(id)sender {
-    self.firstImage.text = @"";
     [self pickImage:1];
 }
 
 - (IBAction)browse_file_2:(id)sender {
-    self.secondImage.text = @"";
     [self pickImage:2];
 }
 
 - (IBAction)browse_file_3:(id)sender {
-    self.thirdImage.text = @"";
     [self pickImage:3];
 }
 
@@ -67,7 +64,7 @@
     filemgr = [NSFileManager defaultManager];
 
     for (int i = 0; i < self.listOfFilePath.count; i++) {
-        [filemgr moveItemAtPath: [self.listOfFilePath objectAtIndex:i] toPath: [NSString stringWithFormat:@"/%@/%@.png", self.name.text,[self.listOfFilePath objectAtIndex:i]] error: NULL] ;
+        [filemgr moveItemAtPath: [self.listOfFilePath objectAtIndex:i] toPath: [NSString stringWithFormat:@"/asd/%@.png", [self.listOfFilePath objectAtIndex:i]] error: NULL] ;
     }
 }
 
@@ -127,8 +124,9 @@
 }
 
 - (void)imagePickerController:(UIImagePickerController *) picker didFinishPickingMediaWithInfo:(NSDictionary *)info {
-    self.listOfFilePath = [[NSMutableArray alloc] init];
+    self.firstImage.imageView.image = [info objectForKey:UIImagePickerControllerOriginalImage];
 
+    self.listOfFilePath = [[NSMutableArray alloc] init];
     
     // get current date
     NSDate *now = [NSDate date];
@@ -146,18 +144,9 @@
         NSData *webData = UIImagePNGRepresentation(editedImage);
         [webData writeToFile:imagePath atomically:YES];
     }
-    if (self.firstImage.text != NULL) {
-        self.firstImage.text = imagePath;
-        [self.listOfFilePath addObject:fileName];
-        NSLog(imagePath);
-    } else if (self.secondImage.text != NULL) {
-        self.secondImage.text = imagePath;
-        [self.listOfFilePath addObject:fileName];
-    } else if (self.thirdImage.text != NULL) {
-        self.thirdImage.text = imagePath;
-        [self.listOfFilePath addObject:fileName];
-    }
-//	[UIImageJPEGRepresentation(imageView.image, 1.0) writeToFile:jpgPath atomically:YES];
+	[UIImageJPEGRepresentation(self.firstImage.imageView.image, 1.0) writeToFile:imagePath atomically:YES];
+    
+//    [self dismissViewControllerAnimated:YES completion:nil];
 }
 
 @end
