@@ -91,12 +91,15 @@
     switch (self.totalImageCaptured) {
         case 1:
             firstImage.imageView.image = image;
+            firstImage.imageView.contentMode = UIViewContentModeScaleAspectFit;
             break;
         case 2:
             secondImage.imageView.image = image;
+            secondImage.imageView.contentMode = UIViewContentModeScaleAspectFit;
             break;
         case 3:
             thirdImage.imageView.image = image;
+            thirdImage.imageView.contentMode = UIViewContentModeScaleAspectFit;
             break;
         default:
             break;

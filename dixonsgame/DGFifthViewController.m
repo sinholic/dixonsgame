@@ -16,12 +16,12 @@
 @property NSArray *productIpadDisplayName;
 @property NSArray *productLaptopDisplayName;
 @property NSArray *productDesktopDisplayName;
-@property NSArray *currentProductDisplayName;
+@property NSMutableArray *currentProductDisplayName;
 @property NSMutableDictionary *currentCorrectProductAnswer;
 @property NSDictionary *ipadProductSynonim;
 @property NSDictionary *laptopProductSynonim;
 @property NSDictionary *desktopProductSynonim;
-@property NSDictionary *currentProductSynonim;
+@property NSMutableDictionary *currentProductSynonim;
 @property NSNumber *totalScore;
 @property AVAudioPlayer *soundPlayer;
 @property AVAudioPlayer *clickPlayer;
@@ -40,6 +40,7 @@
     NSString *timeRemaining = [NSString stringWithFormat:@"%2d", self.secondsCount];
     self.timeRemaining.text = timeRemaining;
     if (self.secondsCount == 0) {
+        [self.soundPlayer stop];
         UIStoryboard *storyboard;
         storyboard = [UIStoryboard storyboardWithName:@"Ipad" bundle:nil];
         DGSixthViewController *sixthViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"SixthView"];
@@ -219,6 +220,8 @@
     self.laptopProductSynonim = @{@"muis":@"0",
                                   @"toetsenbord":@"1",
                                   @"tas":@"2",
+                                  @"hoes" : @"2",
+                                  @"cardreader" : @"19",
                                   @"geheugen":@"3",
                                   @"externehardeschijf":@"4",
                                   @"cooler":@"5",
@@ -299,9 +302,9 @@
                                   @"headphone":@"18",
                                   @"koptelefoon":@"18",
                                   @"headset":@"18",
-                                  @"kabel":@"18",
-                                  @"vgakabel":@"18",
-                                  @"avkabel":@"18",
+                                  @"kabel":@"19",
+                                  @"vgakabel":@"19",
+                                  @"avkabel":@"19",
                                   @"hdmi":@"19"};
     
     self.productDesktopDisplayName = @[@"Muis",
@@ -325,7 +328,7 @@
                                        @"SSD",
                                        @"Netwerkschijf"];
     
-    self.laptopProductSynonim = @{@"muis":@"0",
+    self.desktopProductSynonim = @{@"muis":@"0",
                                   @"toetsenbord":@"1",
                                   @"printer":@"2",
                                   @"scanner":@"3",
@@ -405,31 +408,41 @@
 }
 
 
+- (void)clearData {
+    [self.currentCorrectProductAnswer removeAllObjects];
+    [self.currentProductSynonim removeAllObjects];
+    [self.currentProductDisplayName removeAllObjects];
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
     [self playMusic:@"timer-sound_mixdown" :@"wav" :YES];
     self.currentCorrectProductAnswer = [[NSMutableDictionary alloc] init];
+    self.currentProductDisplayName = [[NSMutableArray alloc] init];
+    self.currentProductSynonim = [[NSMutableDictionary alloc] init];
     sharedData = [NSUserDefaults standardUserDefaults];
+    [self clearData];
     [self countTimer];
     [self.textFieldInputText becomeFirstResponder];
     self.buttonCheckText.enabled = NO;
+    NSLog(@"productIdentifier : %@", [sharedData objectForKey:@"productIdentifier"]);
     if ([[sharedData objectForKey:@"productIdentifier"] isEqual:@"0"]) {
         self.productImage.image = [UIImage imageNamed:@"product-ipad"];
-        self.currentProductDisplayName = self.productIpadDisplayName;
-        self.currentProductSynonim = self.ipadProductSynonim;
+        [self.currentProductDisplayName addObjectsFromArray:self.productIpadDisplayName];
+        [self.currentProductSynonim addEntriesFromDictionary:self.ipadProductSynonim];
         self.labelWhatProduct.text = @"Ipad";
     }
     if ([[sharedData objectForKey:@"productIdentifier"] isEqual:@"1"]) {
         self.productImage.image = [UIImage imageNamed:@"product-laptop"];
-        self.currentProductDisplayName = self.productLaptopDisplayName;
-        self.currentProductSynonim = self.laptopProductSynonim;
+        [self.currentProductDisplayName addObjectsFromArray:self.productLaptopDisplayName];
+        [self.currentProductSynonim addEntriesFromDictionary:self.laptopProductSynonim];
         self.labelWhatProduct.text = @"Notebook";
     }
     if ([[sharedData objectForKey:@"productIdentifier"] isEqual:@"2"]) {
         self.productImage.image = [UIImage imageNamed:@"product-desktop"];
-        self.currentProductDisplayName = self.productDesktopDisplayName;
-        self.currentProductSynonim = self.desktopProductSynonim;
+        [self.currentProductDisplayName addObjectsFromArray:self.productDesktopDisplayName];
+        [self.currentProductSynonim addEntriesFromDictionary:self.desktopProductSynonim];
         self.labelWhatProduct.text = @"Desktop";
     }
 	// Do any additional setup after loading the view.
@@ -476,6 +489,7 @@
         NSLog(@"object at index : %@", [self.currentProductDisplayName objectAtIndex: index]);
         [self putDataToLabel:[self.currentProductDisplayName objectAtIndex: index] :index];
     } else {
+        NSLog(@"string : %@",[self.currentProductSynonim objectForKey:string]);
         [self clickSound:@"false-answer" :@"wav"];
     }
 }
