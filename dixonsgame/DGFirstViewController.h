@@ -8,8 +8,9 @@
 
 #import <UIKit/UIKit.h>
 #import <QuartzCore/QuartzCore.h>
+#import <AVFoundation/AVAudioPlayer.h>
 
-
-@interface DGFirstViewController : UIViewController
+@interface DGFirstViewController : UIViewController <AVAudioPlayerDelegate>
 -(IBAction)buttonStart:(id)sender;
+@property NSUserDefaults *sharedData;
 @end

@@ -8,10 +8,11 @@
 
 #import "DGSecondViewController.h"
 #import "MBProgressHUD.h"
+#import "DGThirdViewController.h"
 
 @interface DGSecondViewController ()
-@property (nonatomic, strong) UIPopoverController *popOver;
-@property NSMutableArray *listOfFilePath;
+@property NSUserDefaults *sharedData;
+@property AVAudioPlayer *soundPlayer;
 @end
 
 @implementation DGSecondViewController
@@ -28,7 +29,11 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    self.sharedData = [NSUserDefaults standardUserDefaults];
 	// Do any additional setup after loading the view.
+
+    [self.personeelnummer becomeFirstResponder];
+    // Do any additional setup after loading the view, typically from a nib.
 }
 
 - (void)didReceiveMemoryWarning
@@ -37,116 +42,54 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (IBAction)browse_file_1:(id)sender {
-    [self pickImage:1];
-}
-
-- (IBAction)browse_file_2:(id)sender {
-    [self pickImage:2];
-}
-
-- (IBAction)browse_file_3:(id)sender {
-    [self pickImage:3];
-}
-
-- (IBAction)submitButton:(id)sender {
-    [self moveFile];
-    UIStoryboard *storyboard;
-    storyboard = [UIStoryboard storyboardWithName:@"Ipad" bundle:nil];
-    UIViewController *secondView = [self.storyboard instantiateViewControllerWithIdentifier:@"ThirdView"];
-    [self presentViewController:secondView animated:YES completion:nil];
-}
-
-
-
-- (void)moveFile {
-    NSFileManager *filemgr;
-    filemgr = [NSFileManager defaultManager];
-
-    for (int i = 0; i < self.listOfFilePath.count; i++) {
-        [filemgr moveItemAtPath: [self.listOfFilePath objectAtIndex:i] toPath: [NSString stringWithFormat:@"/asd/%@.png", [self.listOfFilePath objectAtIndex:i]] error: NULL] ;
+- (void)submit{
+    if ([self.personeelnummer isEqual: @""]) {
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Error" message:@"Please fill the personeelnummer" delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
+        [alert show];
+    } else if ([self.birthdayText isEqual:@""]) {
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Error" message:@"Please fill the geboordedatum" delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
+        [alert show];
+    } else if ([self.personeelnummer.text isEqual:@"123456789"] && [self.birthdayText.text isEqual:@"admin"]){
+        UIStoryboard *storyboard;
+        storyboard = [UIStoryboard storyboardWithName:@"Ipad" bundle:nil];
+        UIViewController *dataView = [self.storyboard instantiateViewControllerWithIdentifier:@"DataView"];
+        [self presentViewController:dataView animated:YES completion:nil];
+    }else {
+        [self playMusic:@"doe-mee-button" :@"wav" :NO ];
+        [self.sharedData setObject:self.personeelnummer.text forKey:@"personeelnummer"];
+        [self.sharedData setObject:self.birthdayText.text forKey:@"birthday"];
+        UIStoryboard *storyboard;
+        storyboard = [UIStoryboard storyboardWithName:@"Ipad" bundle:nil];
+        DGThirdViewController *thirdView = [self.storyboard instantiateViewControllerWithIdentifier:@"ThirdView"];
+        thirdView.personeelnummer = [NSString stringWithFormat:@"%@", self.personeelnummer.text];
+        [self presentViewController:thirdView animated:YES completion:nil];
     }
 }
 
-- (void)pickImage:(int)buttonIndex {
-    // Check if we have a camera
-	if([UIImagePickerController isSourceTypeAvailable: UIImagePickerControllerSourceTypeCamera])
-	{
-		UIActionSheet *actionSheet = [[UIActionSheet alloc]
-                                      initWithTitle:NSLocalizedString(@"Kies een foto",nil)
-                                      delegate:(id)self
-                                      cancelButtonTitle:NSLocalizedString(@"Annuleer",nil)
-                                      destructiveButtonTitle:nil
-                                      otherButtonTitles:NSLocalizedString(@"Maak foto",nil), NSLocalizedString(@"Kies foto",nil), nil];
-        
-		[actionSheet showInView:self.view];
-	} else {
-		UIImagePickerController *imagePicker = [[UIImagePickerController alloc] init];
-        if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPad) {
-            UIPopoverController *popover = [[UIPopoverController alloc] initWithContentViewController:imagePicker];
-            switch (buttonIndex) {
-                case 1:
-                [popover presentPopoverFromRect:self.firstImage.bounds inView:self.firstImage permittedArrowDirections:UIPopoverArrowDirectionAny animated:YES];
-                    break;
-                case 2:
-                    [popover presentPopoverFromRect:self.secondImage.bounds inView:self.secondImage permittedArrowDirections:UIPopoverArrowDirectionAny animated:YES];
-                    break;
-                case 3:
-                    [popover presentPopoverFromRect:self.thirdImage.bounds inView:self.thirdImage permittedArrowDirections:UIPopoverArrowDirectionAny animated:YES];
-                    break;
-                default:
-                    break;
-            }
-            self.popOver = popover;
-        } else {
-            [self presentViewController:imagePicker animated:YES completion:nil];
-        }
-        imagePicker.delegate = (id)self;
-	}
-}
-- (void)actionSheet:(UIActionSheet *)actionSheet clickedButtonAtIndex:(NSInteger)buttonIndex {
-    UIImagePickerController *imagePicker = [[UIImagePickerController alloc] init];
-    imagePicker.delegate = (id)self;
-    
-    if(buttonIndex == 0) {
-        imagePicker.sourceType = UIImagePickerControllerSourceTypeCamera;
-		imagePicker.showsCameraControls = YES;
-        
-    } else if (buttonIndex == 1) {
-        //from gallery
+- (void)playMusic : (NSString *)fileName : (NSString *)fileType : (BOOL)loop {
+    NSURL* musicFile = [NSURL fileURLWithPath:[[NSBundle mainBundle]
+                                               pathForResource:fileName
+                                               ofType:fileType]];
+    self.soundPlayer = [[AVAudioPlayer alloc] initWithContentsOfURL:musicFile error:nil];
+    self.soundPlayer.delegate = (id)self;
+    [self.soundPlayer prepareToPlay];
+    [self.soundPlayer play];
+    self.soundPlayer.volume = 0.5;
+    if (loop) {
+        self.soundPlayer.numberOfLoops = -1;
     }
-    [self presentViewController:imagePicker animated:YES completion:nil];
-    
 }
 
-- (void)imagePickerControllerDidCancel:(UIImagePickerController *) picker {
-    [self dismissViewControllerAnimated:YES completion:nil];
+- (IBAction)submitButtonPressed:(id)sender {
+    [self submit];
 }
 
-- (void)imagePickerController:(UIImagePickerController *) picker didFinishPickingMediaWithInfo:(NSDictionary *)info {
-    self.firstImage.imageView.image = [info objectForKey:UIImagePickerControllerOriginalImage];
-
-    self.listOfFilePath = [[NSMutableArray alloc] init];
-    
-    // get current date
-    NSDate *now = [NSDate date];
-    
-    //obtaining saving path
-    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
-    NSString *documentsDirectory = [paths objectAtIndex:0];
-    NSString *fileName = [NSString stringWithFormat:@"IMG-%@.png",now];
-    NSString *imagePath = [documentsDirectory stringByAppendingPathComponent:fileName];
-    
-    //extracting image from the picker and saving it
-    NSString *mediaType = [info objectForKey:UIImagePickerControllerMediaType];
-    if ([mediaType isEqualToString:@"public.image"]){
-        UIImage *editedImage = [info objectForKey:UIImagePickerControllerEditedImage];
-        NSData *webData = UIImagePNGRepresentation(editedImage);
-        [webData writeToFile:imagePath atomically:YES];
-    }
-	[UIImageJPEGRepresentation(self.firstImage.imageView.image, 1.0) writeToFile:imagePath atomically:YES];
-    
-//    [self dismissViewControllerAnimated:YES completion:nil];
+- (IBAction)personeelFinish:(id)sender {
+    [self.personeelnummer resignFirstResponder];
+    [self.birthdayText becomeFirstResponder];
 }
 
+- (IBAction)birthdayFinish:(id)sender {
+    [self submit];
+}
 @end

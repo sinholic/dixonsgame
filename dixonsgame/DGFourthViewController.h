@@ -7,8 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <AVFoundation/AVFoundation.h>
 
-@interface DGFourthViewController : UIViewController
-@property (nonatomic) IBOutlet UILabel *timeRemaining;
-
+@interface DGFourthViewController : UIViewController <AVAudioPlayerDelegate>
+- (IBAction)startButtonClicked:(id)sender;
 @end
