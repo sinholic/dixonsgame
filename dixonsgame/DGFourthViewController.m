@@ -9,23 +9,11 @@
 #import "DGFourthViewController.h"
 
 @interface DGFourthViewController ()
-@property NSTimer *countdownTimer;
-@property int secondsCount;
+@property AVAudioPlayer *soundPlayer;
 
 @end
 
 @implementation DGFourthViewController
-
-- (void)countTimer {
-    self.secondsCount = 60;
-    self.countdownTimer = [NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(timerRun) userInfo:nil repeats:YES];
-}
-
-- (void)timerRun {
-    self.secondsCount = self.secondsCount - 1;
-    NSString *timeRemaining = [NSString stringWithFormat:@"Nog %2d seconden ", self.secondsCount];
-    self.timeRemaining.text = timeRemaining;
-}
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -39,8 +27,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    [self countTimer];
 	// Do any additional setup after loading the view.
+    
 }
 
 - (void)didReceiveMemoryWarning
@@ -49,4 +37,25 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (void)playMusic : (NSString *)fileName : (NSString *)fileType : (BOOL)loop {
+    NSURL* musicFile = [NSURL fileURLWithPath:[[NSBundle mainBundle]
+                                               pathForResource:fileName
+                                               ofType:fileType]];
+    self.soundPlayer = [[AVAudioPlayer alloc] initWithContentsOfURL:musicFile error:nil];
+    self.soundPlayer.delegate = (id)self;
+    [self.soundPlayer prepareToPlay];
+    [self.soundPlayer play];
+    self.soundPlayer.volume = 0.5;
+    if (loop) {
+        self.soundPlayer.numberOfLoops = -1;
+    }
+}
+
+- (IBAction)startButtonClicked:(id)sender {
+    [self playMusic:@"doe-mee-button" :@"wav" :NO];
+    UIStoryboard *storyboard;
+    storyboard = [UIStoryboard storyboardWithName:@"Ipad" bundle:nil];
+    UIViewController *secondView = [self.storyboard instantiateViewControllerWithIdentifier:@"FifthView"];
+    [self presentViewController:secondView animated:YES completion:nil];
+}
 @end
