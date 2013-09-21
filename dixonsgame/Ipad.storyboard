@@ -243,7 +243,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="MJy-kX-Bwx">
-                                <rect key="frame" x="877" y="352" width="109" height="43"/>
+                                <rect key="frame" x="877" y="349" width="109" height="43"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" backgroundImage="button-check-04.png">
@@ -384,8 +384,9 @@
                                 <rect key="frame" x="399" y="269" width="242" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                                <textInputTraits key="textInputTraits" returnKeyType="done"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="done"/>
                                 <connections>
+                                    <action selector="birthdayChanged:" destination="9Rl-Fy-2n0" eventType="editingChanged" id="OmQ-Rt-b0n"/>
                                     <action selector="birthdayFinish:" destination="9Rl-Fy-2n0" eventType="editingDidEndOnExit" id="34o-mR-NK3"/>
                                 </connections>
                             </textField>
@@ -656,10 +657,10 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences" returnKeyType="go"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Djk-0H-KL1">
-                                <rect key="frame" x="726.5" y="352" width="192" height="44"/>
+                                <rect key="frame" x="720" y="350" width="192" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" title="Button" image="klaar-button-16.png">
@@ -681,6 +682,7 @@
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     <connections>
                         <outlet property="buttonPickVideo" destination="LKQ-gc-Wcx" id="eep-D7-ddI"/>
+                        <outlet property="submitButton" destination="Djk-0H-KL1" id="BZJ-jf-Dy8"/>
                         <outlet property="textFeedback" destination="EMa-Dj-b2e" id="DiV-fn-pWk"/>
                     </connections>
                 </viewController>
@@ -897,6 +899,7 @@
         <class className="DGSecondViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/DGSecondViewController.h"/>
             <relationships>
+                <relationship kind="action" name="birthdayChanged:"/>
                 <relationship kind="action" name="birthdayFinish:"/>
                 <relationship kind="action" name="personeelFinish:"/>
                 <relationship kind="action" name="submitButtonPressed:"/>
@@ -911,6 +914,7 @@
                 <relationship kind="action" name="buttonKlaarClicked:"/>
                 <relationship kind="action" name="buttonVideoClicked:"/>
                 <relationship kind="outlet" name="buttonPickVideo" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="submitButton" candidateClass="UIButton"/>
                 <relationship kind="outlet" name="textFeedback" candidateClass="UITextView"/>
             </relationships>
         </class>

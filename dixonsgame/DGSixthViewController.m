@@ -43,7 +43,10 @@
     [super viewDidLoad];
     [self playMusic:@"win-the-game" :@"wav":NO];
     self.sharedData = [NSUserDefaults standardUserDefaults];
-    NSString *objectForTotalCorrectAnswers = [NSString stringWithFormat:@"%i", self.totalCorrectAnswer ];
+    if (!self.totalCorrectAnswer) {
+        self.totalCorrectAnswer = 0;
+    }
+    NSString *objectForTotalCorrectAnswers = [NSString stringWithFormat:@"%i",  self.totalCorrectAnswer];
     [self.sharedData setObject:objectForTotalCorrectAnswers forKey:@"totalCorrectAnswers"];
     self.labelFinish.text = [NSString stringWithFormat:@"Je hebt %i producten geraden die je kan bijverkopen voor de %@!", self.totalCorrectAnswer, self.currentProductName];
     self.imageScore.image = [UIImage imageNamed:[NSString stringWithFormat:@"%i.png", self.totalCorrectAnswer]];

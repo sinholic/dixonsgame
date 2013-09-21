@@ -17,5 +17,6 @@
 @property (weak, nonatomic) IBOutlet UIButton *submitButton;
 @property (weak, nonatomic) IBOutlet UITextField *birthdayText;
 - (IBAction)submitButtonPressed:(id)sender;
+- (IBAction)birthdayChanged:(id)sender;
 
 @end

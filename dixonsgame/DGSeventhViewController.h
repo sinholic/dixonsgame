@@ -14,5 +14,6 @@
 - (IBAction)buttonKlaarClicked:(id)sender;
 @property (weak, nonatomic) IBOutlet UITextView *textFeedback;
 @property (weak, nonatomic) IBOutlet UIButton *buttonPickVideo;
+@property (weak, nonatomic) IBOutlet UIButton *submitButton;
 
 @end

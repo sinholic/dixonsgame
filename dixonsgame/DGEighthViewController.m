@@ -30,12 +30,15 @@
 	// Do any additional setup after loading the view.
     self.sharedData = [NSUserDefaults standardUserDefaults];
     NSString *productIdentifier = [self.sharedData objectForKey:@"productIdentifier"];
+    NSLog(@"%@", productIdentifier);
     int intValueOfProductIndentifier = [productIdentifier intValue];
-    intValueOfProductIndentifier += 1;
     if (intValueOfProductIndentifier == 2) {
         intValueOfProductIndentifier = 0;
+    } else {
+        intValueOfProductIndentifier += 1;
     }
     productIdentifier = [NSString stringWithFormat:@"%i",intValueOfProductIndentifier];
+    NSLog(@"%@", productIdentifier);
     [self.sharedData setObject:productIdentifier forKey:@"productIdentifier"];
 }
 

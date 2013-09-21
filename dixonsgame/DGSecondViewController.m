@@ -31,7 +31,7 @@
     [super viewDidLoad];
     self.sharedData = [NSUserDefaults standardUserDefaults];
 	// Do any additional setup after loading the view.
-
+    self.submitButton.enabled = NO;
     [self.personeelnummer becomeFirstResponder];
     // Do any additional setup after loading the view, typically from a nib.
 }
@@ -43,13 +43,13 @@
 }
 
 - (void)submit{
-    if ([self.personeelnummer isEqual: @""]) {
+    if ([self.personeelnummer.text isEqualToString: @""]) {
         UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Error" message:@"Please fill the personeelnummer" delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
         [alert show];
-    } else if ([self.birthdayText isEqual:@""]) {
+    } else if ([self.birthdayText.text isEqualToString:@""]) {
         UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Error" message:@"Please fill the geboordedatum" delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
         [alert show];
-    } else if ([self.personeelnummer.text isEqual:@"123456789"] && [self.birthdayText.text isEqual:@"admin"]){
+    } else if ([self.personeelnummer.text isEqualToString:@"123456789"] && [self.birthdayText.text isEqualToString:@"987654321"]){
         UIStoryboard *storyboard;
         storyboard = [UIStoryboard storyboardWithName:@"Ipad" bundle:nil];
         UIViewController *dataView = [self.storyboard instantiateViewControllerWithIdentifier:@"DataView"];
@@ -84,10 +84,20 @@
     [self submit];
 }
 
+- (IBAction)birthdayChanged:(id)sender {
+    if ([self.birthdayText.text isEqualToString:@""]) {
+        self.submitButton.enabled = NO;
+    } else {
+        self.submitButton.enabled = YES;
+    }
+}
+
 - (IBAction)personeelFinish:(id)sender {
     [self.personeelnummer resignFirstResponder];
     [self.birthdayText becomeFirstResponder];
 }
+
+
 
 - (IBAction)birthdayFinish:(id)sender {
     [self submit];

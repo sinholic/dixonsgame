@@ -30,6 +30,7 @@
 {
     [super viewDidLoad];
     self.textFeedback.delegate = self;
+    self.submitButton.enabled = NO;
     self.library = [[ALAssetsLibrary alloc] init];
     self.sharedData = [NSUserDefaults standardUserDefaults];
 	// Do any additional setup after loading the view.
@@ -103,6 +104,7 @@
         NSLog(@"%@", info);
         NSLog(@"%@", album);
     }
+    self.submitButton.enabled = YES;
     [self dismissViewControllerAnimated:YES completion:nil];
     
 }
@@ -115,8 +117,8 @@
     textView.text = @"";
 }
 
-- (void)textViewDidEndEditing:(UITextView *)textView {
-    [self finishTheGame];
+- (void)textViewDidChange:(UITextView *)textView {
+    self.submitButton.enabled = YES;
 }
 
 
@@ -124,28 +126,8 @@
     [self finishTheGame];
 }
 
--(BOOL)textViewShouldEndEditing:(UITextView *)textView
-{
-    NSLog(@"textViewShouldEndEditing");
-    return TRUE;
-}
-
-- (BOOL)textView:(UITextView *)textView shouldChangeTextInRange:(NSRange)range replacementText:(NSString *)text
-{
-    NSLog(@"shouldChangeTextInRange");
-    // Any new character added is passed in as the "text" parameter
-    if ([text isEqualToString:@"\n"])
-    {
-        [textView resignFirstResponder];
-        return FALSE;
-    }
-    
-    // For any other character return TRUE so that the text gets added to the view
-    return TRUE;
-}
-
 - (void)finishTheGame {
-    if ([self.textFeedback isEqual:@""]) {
+    if ([self.textFeedback.text isEqualToString:@"Vul antwoord in…"]) {
         UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Error" message:@"Please fill the antwoord" delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
         [alert show];
     }
