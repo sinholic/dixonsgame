@@ -44,10 +44,10 @@
 
 - (void)submit{
     if ([self.personeelnummer.text isEqualToString: @""]) {
-        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Error" message:@"Please fill the personeelnummer" delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Error" message:@"Vul personeelnummer in" delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
         [alert show];
     } else if ([self.birthdayText.text isEqualToString:@""]) {
-        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Error" message:@"Please fill the geboordedatum" delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Error" message:@"Vul geboortedatum in" delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
         [alert show];
     } else if ([self.personeelnummer.text isEqualToString:@"123456789"] && [self.birthdayText.text isEqualToString:@"987654321"]){
         UIStoryboard *storyboard;
@@ -57,7 +57,7 @@
     }else {
         [self playMusic:@"doe-mee-button" :@"wav" :NO ];
         [self.sharedData setObject:self.personeelnummer.text forKey:@"personeelnummer"];
-        [self.sharedData setObject:self.birthdayText.text forKey:@"birthday"];
+        [self.sharedData setObject:self.birthdayText.text forKey:@"geboortedatum"];
         UIStoryboard *storyboard;
         storyboard = [UIStoryboard storyboardWithName:@"Ipad" bundle:nil];
         DGThirdViewController *thirdView = [self.storyboard instantiateViewControllerWithIdentifier:@"ThirdView"];
