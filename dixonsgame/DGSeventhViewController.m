@@ -41,7 +41,7 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
+/*
 - (IBAction)buttonVideoClicked:(id)sender {
     if ([UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypeCamera])
 	{
@@ -79,7 +79,8 @@
         //No camera is availble
     }
 }
-
+*/
+/*
 -(void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info {
     
     NSString *mediaType = [info objectForKey:UIImagePickerControllerMediaType];
@@ -108,11 +109,12 @@
     [self dismissViewControllerAnimated:YES completion:nil];
     
 }
-
+ */
+/*
 - (void)imagePickerControllerDidCancel:(UIImagePickerController *)picker {
     [self dismissViewControllerAnimated:YES completion:nil];
 }
-
+*/
 - (void)textViewDidBeginEditing:(UITextView *)textView {
     textView.text = @"";
 }
@@ -128,14 +130,15 @@
 
 - (void)finishTheGame {
     if ([self.textFeedback.text isEqualToString:@"Vul antwoord in…"]) {
-        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Error" message:@"Please fill the antwoord" delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Error" message:@"Vul antwoord in." delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
         [alert show];
+    } else {
+        [self.sharedData setObject:self.textFeedback.text forKey:@"feedback"];
+        UIStoryboard *storyboard;
+        storyboard = [UIStoryboard storyboardWithName:@"Ipad" bundle:nil];
+        UIViewController *secondView = [self.storyboard instantiateViewControllerWithIdentifier:@"EigththView"];
+        [self presentViewController:secondView animated:YES completion:nil];
     }
-    [self.sharedData setObject:self.textFeedback.text forKey:@"feedback"];
-    UIStoryboard *storyboard;
-    storyboard = [UIStoryboard storyboardWithName:@"Ipad" bundle:nil];
-    UIViewController *secondView = [self.storyboard instantiateViewControllerWithIdentifier:@"EigththView"];
-    [self presentViewController:secondView animated:YES completion:nil];
 }
 
 @end

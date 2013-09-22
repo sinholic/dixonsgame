@@ -17,20 +17,6 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Je5-eg-6vr">
-                                <rect key="frame" x="290" y="320" width="118" height="118"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" title="Button" image="button-pick-image-10.png">
-                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <state key="highlighted">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="browse_file_1:" destination="ek2-aM-DKs" eventType="touchDown" id="tnj-bq-avO"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Wsm-F2-5pa">
                                 <rect key="frame" x="453" y="320" width="118" height="118"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" title="Button" image="button-pick-image-10.png">
@@ -41,21 +27,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="browse_file_2:" destination="ek2-aM-DKs" eventType="touchDown" id="e1o-VY-6b7"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="eiM-0H-kT2">
-                                <rect key="frame" x="621" y="320" width="118" height="118"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" title="Button" image="button-pick-image-10.png">
-                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <state key="highlighted">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="browse_file_3:" destination="ek2-aM-DKs" eventType="touchDown" id="pBY-6T-irh"/>
+                                    <action selector="browse_file_1:" destination="ek2-aM-DKs" eventType="touchDown" id="tnj-bq-avO"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="9Wx-Sa-B7b">
@@ -81,8 +53,6 @@
                     <connections>
                         <outlet property="buttonSubmit" destination="9Wx-Sa-B7b" id="Pm9-V1-dJR"/>
                         <outlet property="firstImage" destination="Je5-eg-6vr" id="S8X-YK-7vV"/>
-                        <outlet property="secondImage" destination="Wsm-F2-5pa" id="5PI-6a-6LR"/>
-                        <outlet property="thirdImage" destination="eiM-0H-kT2" id="7YA-j5-oAp"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mKU-0r-hEA" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -633,21 +603,6 @@
                                 <rect key="frame" x="0.0" y="0.0" width="1024" height="748"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="LKQ-gc-Wcx">
-                                <rect key="frame" x="52" y="277" width="115" height="116"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" title="Button" image="button-pick-video-10.png">
-                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <state key="highlighted">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="buttonVideoClicked:" destination="MrG-CW-8Hd" eventType="touchDown" id="XgX-Gg-vKb"/>
-                                </connections>
-                            </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="text-area-background-08.png" id="eaO-fG-UZO">
                                 <rect key="frame" x="175" y="273" width="358" height="123"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -681,7 +636,6 @@
                     <toolbarItems/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     <connections>
-                        <outlet property="buttonPickVideo" destination="LKQ-gc-Wcx" id="eep-D7-ddI"/>
                         <outlet property="submitButton" destination="Djk-0H-KL1" id="BZJ-jf-Dy8"/>
                         <outlet property="textFeedback" destination="EMa-Dj-b2e" id="DiV-fn-pWk"/>
                     </connections>
@@ -818,7 +772,6 @@
         <image name="button-back-to-start-08.png" width="169" height="169"/>
         <image name="button-check-04.png" width="111" height="45"/>
         <image name="button-pick-image-10.png" width="117" height="116"/>
-        <image name="button-pick-video-10.png" width="117" height="117"/>
         <image name="button-start-active-14.png" width="193" height="44"/>
         <image name="button-verder-inactive-13.png" width="194" height="44"/>
         <image name="button-verder-staan.png" width="111" height="45"/>
@@ -837,129 +790,6 @@
         <image name="text-area-background-08.png" width="359" height="125"/>
         <image name="text-background.png" width="359" height="45"/>
     </resources>
-    <classes>
-        <class className="DGDataViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/DGDataViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="doneViewList:"/>
-                <relationship kind="outlet" name="listOfDataInTextView" candidateClass="UITextView"/>
-            </relationships>
-        </class>
-        <class className="DGEighthViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/DGEighthViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="buttonBackToStartClicked:"/>
-            </relationships>
-        </class>
-        <class className="DGFifthViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/DGFifthViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="buttonCheckClicked:"/>
-                <relationship kind="action" name="textFieldEditBegin:"/>
-                <relationship kind="action" name="textFieldFinished:"/>
-                <relationship kind="outlet" name="buttonCheckText" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="labelProductName1" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="labelProductName10" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="labelProductName11" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="labelProductName12" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="labelProductName13" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="labelProductName14" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="labelProductName15" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="labelProductName16" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="labelProductName17" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="labelProductName18" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="labelProductName19" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="labelProductName2" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="labelProductName20" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="labelProductName3" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="labelProductName4" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="labelProductName5" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="labelProductName6" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="labelProductName7" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="labelProductName8" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="labelProductName9" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="labelWhatProduct" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="productImage" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="textFieldInputText" candidateClass="UITextField"/>
-                <relationship kind="outlet" name="timeRemaining" candidateClass="UILabel"/>
-            </relationships>
-        </class>
-        <class className="DGFirstViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/DGFirstViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="buttonStart:"/>
-            </relationships>
-        </class>
-        <class className="DGFourthViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/DGFourthViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="startButtonClicked:"/>
-            </relationships>
-        </class>
-        <class className="DGSecondViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/DGSecondViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="birthdayChanged:"/>
-                <relationship kind="action" name="birthdayFinish:"/>
-                <relationship kind="action" name="personeelFinish:"/>
-                <relationship kind="action" name="submitButtonPressed:"/>
-                <relationship kind="outlet" name="birthdayText" candidateClass="UITextField"/>
-                <relationship kind="outlet" name="personeelnummer" candidateClass="UITextField"/>
-                <relationship kind="outlet" name="submitButton" candidateClass="UIButton"/>
-            </relationships>
-        </class>
-        <class className="DGSeventhViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/DGSeventhViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="buttonKlaarClicked:"/>
-                <relationship kind="action" name="buttonVideoClicked:"/>
-                <relationship kind="outlet" name="buttonPickVideo" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="submitButton" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="textFeedback" candidateClass="UITextView"/>
-            </relationships>
-        </class>
-        <class className="DGSixthViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/DGSixthViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="verderButtonClicked:"/>
-                <relationship kind="outlet" name="imageScore" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="labelFinish" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="labelProductName1" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="labelProductName10" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="labelProductName11" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="labelProductName12" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="labelProductName13" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="labelProductName14" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="labelProductName15" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="labelProductName16" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="labelProductName17" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="labelProductName18" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="labelProductName19" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="labelProductName2" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="labelProductName20" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="labelProductName3" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="labelProductName4" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="labelProductName5" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="labelProductName6" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="labelProductName7" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="labelProductName8" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="labelProductName9" candidateClass="UILabel"/>
-            </relationships>
-        </class>
-        <class className="DGThirdViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/DGThirdViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="browse_file_1:"/>
-                <relationship kind="action" name="browse_file_2:"/>
-                <relationship kind="action" name="browse_file_3:"/>
-                <relationship kind="action" name="submitButton:"/>
-                <relationship kind="outlet" name="buttonSubmit" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="firstImage" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="secondImage" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="thirdImage" candidateClass="UIButton"/>
-            </relationships>
-        </class>
-    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar" statusBarStyle="blackTranslucent"/>
         <simulatedOrientationMetrics key="orientation"/>

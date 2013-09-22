@@ -19,7 +19,7 @@
 @end
 
 @implementation DGThirdViewController
-@synthesize firstImage, secondImage, thirdImage, popOver, library;
+@synthesize firstImage, /*secondImage, thirdImage,*/ popOver, library;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -36,13 +36,11 @@
     self.library = [[ALAssetsLibrary alloc] init];
     self.sharedData = [NSUserDefaults standardUserDefaults];
     self.totalImageCaptured = 1;
-	// Do any additional setup after loading the view.
 }
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 
@@ -52,7 +50,7 @@
     self.buttonSubmit.enabled = YES;
     self.buttonSubmit.imageView.image = [UIImage imageNamed:@"button-verder-active"];
 }
-
+/*
 - (IBAction)browse_file_2:(id)sender {
     [self playMusic:@"doe-mee-button" :@"wav" :NO];
     [self pickImage:2];
@@ -62,7 +60,7 @@
     [self playMusic:@"doe-mee-button" :@"wav" :NO];
     [self pickImage:3];
 }
-
+*/
 - (IBAction)submitButton:(id)sender {
     [self playMusic:@"doe-mee-button" :@"wav" :NO];
     UIStoryboard *storyboard;
@@ -93,14 +91,14 @@
             firstImage.imageView.image = image;
             firstImage.imageView.contentMode = UIViewContentModeScaleAspectFit;
             break;
-        case 2:
+       /* case 2:
             secondImage.imageView.image = image;
             secondImage.imageView.contentMode = UIViewContentModeScaleAspectFit;
             break;
         case 3:
             thirdImage.imageView.image = image;
             thirdImage.imageView.contentMode = UIViewContentModeScaleAspectFit;
-            break;
+            break;*/
         default:
             break;
     }
