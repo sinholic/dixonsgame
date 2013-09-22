@@ -78,13 +78,13 @@
 		01BF349B17ECEF6B00357E44 /* win-the-game.wav in Resources */ = {isa = PBXBuildFile; fileRef = 01BF349517ECEF6B00357E44 /* win-the-game.wav */; };
 		01BF349D17ED00AF00357E44 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01BF349C17ED00AF00357E44 /* MediaPlayer.framework */; };
 		01BF349F17EDA99600357E44 /* 0.png in Resources */ = {isa = PBXBuildFile; fileRef = 01BF349E17EDA99600357E44 /* 0.png */; };
+		01BF34A117EEB60400357E44 /* scene 6.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 01BF34A017EEB60400357E44 /* scene 6.jpg */; };
 		8F4A9A8E17E98FE00005FC92 /* button start-07.png in Resources */ = {isa = PBXBuildFile; fileRef = 8F4A9A8C17E98FE00005FC92 /* button start-07.png */; };
 		8F4A9A8F17E98FE00005FC92 /* scene 1.png in Resources */ = {isa = PBXBuildFile; fileRef = 8F4A9A8D17E98FE00005FC92 /* scene 1.png */; };
 		8F4A9A9117E991810005FC92 /* scene 2.png in Resources */ = {isa = PBXBuildFile; fileRef = 8F4A9A9017E991810005FC92 /* scene 2.png */; };
 		8F4A9A9317E992160005FC92 /* button-pick-image-10.png in Resources */ = {isa = PBXBuildFile; fileRef = 8F4A9A9217E992160005FC92 /* button-pick-image-10.png */; };
 		8F4A9A9717E99D120005FC92 /* klaar-button-16.png in Resources */ = {isa = PBXBuildFile; fileRef = 8F4A9A9617E99D120005FC92 /* klaar-button-16.png */; };
 		8F4A9A9917E99F110005FC92 /* scene 5.png in Resources */ = {isa = PBXBuildFile; fileRef = 8F4A9A9817E99F110005FC92 /* scene 5.png */; };
-		8F4A9A9B17E99F3E0005FC92 /* scene 6.png in Resources */ = {isa = PBXBuildFile; fileRef = 8F4A9A9A17E99F3E0005FC92 /* scene 6.png */; };
 		8F4A9AA217E99F9D0005FC92 /* button-back-to-start-08.png in Resources */ = {isa = PBXBuildFile; fileRef = 8F4A9A9C17E99F9D0005FC92 /* button-back-to-start-08.png */; };
 		8F4A9AA317E99F9D0005FC92 /* button-pick-video-10.png in Resources */ = {isa = PBXBuildFile; fileRef = 8F4A9A9D17E99F9D0005FC92 /* button-pick-video-10.png */; };
 		8F4A9AA417E99F9D0005FC92 /* button-start-active-14.png in Resources */ = {isa = PBXBuildFile; fileRef = 8F4A9A9E17E99F9D0005FC92 /* button-start-active-14.png */; };
@@ -186,13 +186,13 @@
 		01BF349517ECEF6B00357E44 /* win-the-game.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "win-the-game.wav"; sourceTree = "<group>"; };
 		01BF349C17ED00AF00357E44 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
 		01BF349E17EDA99600357E44 /* 0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 0.png; sourceTree = "<group>"; };
+		01BF34A017EEB60400357E44 /* scene 6.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "scene 6.jpg"; sourceTree = "<group>"; };
 		8F4A9A8C17E98FE00005FC92 /* button start-07.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button start-07.png"; sourceTree = "<group>"; };
 		8F4A9A8D17E98FE00005FC92 /* scene 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "scene 1.png"; sourceTree = "<group>"; };
 		8F4A9A9017E991810005FC92 /* scene 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "scene 2.png"; sourceTree = "<group>"; };
 		8F4A9A9217E992160005FC92 /* button-pick-image-10.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button-pick-image-10.png"; sourceTree = "<group>"; };
 		8F4A9A9617E99D120005FC92 /* klaar-button-16.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "klaar-button-16.png"; sourceTree = "<group>"; };
 		8F4A9A9817E99F110005FC92 /* scene 5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "scene 5.png"; sourceTree = "<group>"; };
-		8F4A9A9A17E99F3E0005FC92 /* scene 6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "scene 6.png"; sourceTree = "<group>"; };
 		8F4A9A9C17E99F9D0005FC92 /* button-back-to-start-08.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button-back-to-start-08.png"; sourceTree = "<group>"; };
 		8F4A9A9D17E99F9D0005FC92 /* button-pick-video-10.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button-pick-video-10.png"; sourceTree = "<group>"; };
 		8F4A9A9E17E99F9D0005FC92 /* button-start-active-14.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button-start-active-14.png"; sourceTree = "<group>"; };
@@ -222,6 +222,7 @@
 		013A848217EAE3B000BC42ED /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				01BF34A017EEB60400357E44 /* scene 6.jpg */,
 				01BF349E17EDA99600357E44 /* 0.png */,
 				013A847C17EADBBB00BC42ED /* product-desktop.png */,
 				013A847D17EADBBC00BC42ED /* product-ipad.png */,
@@ -262,7 +263,6 @@
 				8F4A9A9217E992160005FC92 /* button-pick-image-10.png */,
 				8F4A9A8C17E98FE00005FC92 /* button start-07.png */,
 				8F4A9A9617E99D120005FC92 /* klaar-button-16.png */,
-				8F4A9A9A17E99F3E0005FC92 /* scene 6.png */,
 				8F4A9A9817E99F110005FC92 /* scene 5.png */,
 				013A845617E9DAD700BC42ED /* scene 4.png */,
 				013A844C17E9C18700BC42ED /* scene 3-2.png */,
@@ -466,7 +466,6 @@
 				8F4A9A9317E992160005FC92 /* button-pick-image-10.png in Resources */,
 				8F4A9A9717E99D120005FC92 /* klaar-button-16.png in Resources */,
 				8F4A9A9917E99F110005FC92 /* scene 5.png in Resources */,
-				8F4A9A9B17E99F3E0005FC92 /* scene 6.png in Resources */,
 				8F4A9AA217E99F9D0005FC92 /* button-back-to-start-08.png in Resources */,
 				8F4A9AA317E99F9D0005FC92 /* button-pick-video-10.png in Resources */,
 				8F4A9AA417E99F9D0005FC92 /* button-start-active-14.png in Resources */,
@@ -516,6 +515,7 @@
 				01BF349A17ECEF6B00357E44 /* true-answer.wav in Resources */,
 				01BF349B17ECEF6B00357E44 /* win-the-game.wav in Resources */,
 				01BF349F17EDA99600357E44 /* 0.png in Resources */,
+				01BF34A117EEB60400357E44 /* scene 6.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
