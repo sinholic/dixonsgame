@@ -445,13 +445,13 @@
         [self.currentProductSynonim addEntriesFromDictionary:self.desktopProductSynonim];
         self.labelWhatProduct.text = @"Desktop";
     }
-	// Do any additional setup after loading the view.
+
 }
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+
 }
 
 - (IBAction)textFieldEditBegin:(id)sender {
@@ -480,6 +480,7 @@
 -(void)checkText {
     NSString *string = [self.textFieldInputText.text lowercaseString];
     string = [self trimText:string];
+    NSLog(@"to check: %@",string);
     if ([self.currentProductSynonim objectForKey:string]) {
         [self clickSound:@"true-answer" :@"wav"];
         int index = [[self.currentProductSynonim objectForKey:string] intValue];
