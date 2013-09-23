@@ -40,11 +40,55 @@
 - (void)applicationDidBecomeActive:(UIApplication *)application
 {
     // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
+	[self triggerCheckForAppUpdate];
 }
 
 - (void)applicationWillTerminate:(UIApplication *)application
 {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+}
+
+
+- (void)triggerCheckForAppUpdate {
+    NSLog(@"triggerCheckForAppUpdate");
+	
+	/* Operation Queue init (autorelease) */
+    NSOperationQueue *queue = [NSOperationQueue new];
+    /* Create our NSInvocationOperation to call loadDataWithOperation, passing in nil */
+    NSInvocationOperation *operation = [[NSInvocationOperation alloc] initWithTarget:self
+																			selector:@selector(checkForAppUpdate)
+																			  object:nil];
+	
+    /* Add the operation to the queue */
+    [queue addOperation:operation];
+	
+	
+}
+
+- (void)checkForAppUpdate {
+    NSLog(@"checkForAppUpdate");
+	BOOL updateAvailable = NO;
+    NSDictionary *updateDictionary = [NSDictionary dictionaryWithContentsOfURL:
+                                      [NSURL URLWithString:@"https://www.basgroup.nu/wp-content/uploads/dixonsgame.plist"]];
+    
+    if(updateDictionary)
+    {
+        NSArray *items = [updateDictionary objectForKey:@"items"];
+        NSDictionary *itemDict = [items lastObject];
+        
+        NSDictionary *metaData = [itemDict objectForKey:@"metadata"];
+        NSString *newversion = [metaData valueForKey:@"bundle-version"];
+        NSString *currentversion = [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleVersion"];
+        
+        updateAvailable = ([newversion compare:currentversion options:NSNumericSearch] == NSOrderedDescending);
+    }
+	
+	NSLog(@"appUpdateAvailable: %@", updateAvailable ? @"YES" : @"NO");
+	if (updateAvailable) {
+		UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"App update beschikbaar" message:@"Wil je de nieuwe app nu installeren?" delegate:self cancelButtonTitle:@"Annuleer" otherButtonTitles:@"OK", nil];
+		[alert performSelectorOnMainThread:@selector(show) withObject:nil waitUntilDone:YES];
+		//[alert show];
+	}
 }
 
 @end
