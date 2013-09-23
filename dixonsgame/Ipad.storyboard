@@ -12,7 +12,7 @@
                         <rect key="frame" x="0.0" y="20" width="1024" height="748"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="scene 2.png" id="3bB-3N-t2K">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="PHOTO PAGE-11.png" id="3bB-3N-t2K">
                                 <rect key="frame" x="0.0" y="0.0" width="1024" height="758"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -67,12 +67,12 @@
                         <rect key="frame" x="0.0" y="20" width="1024" height="748"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="scene 3.png" id="rqB-ue-kaK">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="game background-05.png" id="rqB-ue-kaK">
                                 <rect key="frame" x="0.0" y="0.0" width="1024" height="748"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" background="text-background.png" id="grB-NU-gKs">
-                                <rect key="frame" x="517" y="350" width="358" height="42"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" background="FIELD-05.png" id="grB-NU-gKs">
+                                <rect key="frame" x="33" y="319" width="358" height="42"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocorrectionType="no" returnKeyType="go"/>
@@ -82,121 +82,121 @@
                                 </connections>
                             </textField>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="NTP-UB-Hxq">
-                                <rect key="frame" x="574" y="161" width="190" height="21"/>
+                                <rect key="frame" x="580" y="192" width="190" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="vth-ZG-now">
-                                <rect key="frame" x="574" y="245" width="190" height="21"/>
+                                <rect key="frame" x="580" y="276" width="190" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="KUS-Ck-wEJ">
-                                <rect key="frame" x="574" y="182" width="190" height="21"/>
+                                <rect key="frame" x="580" y="213" width="190" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="deM-Op-Nxn">
-                                <rect key="frame" x="574" y="267" width="190" height="21"/>
+                                <rect key="frame" x="580" y="298" width="190" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="abr-TK-lDq">
-                                <rect key="frame" x="574" y="224" width="190" height="21"/>
+                                <rect key="frame" x="580" y="255" width="190" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="bRR-vQ-p5O">
-                                <rect key="frame" x="574" y="138" width="190" height="21"/>
+                                <rect key="frame" x="580" y="169" width="190" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="phj-8m-l9N">
-                                <rect key="frame" x="574" y="116" width="190" height="21"/>
+                                <rect key="frame" x="580" y="147" width="190" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="0Ws-Yc-m8z">
-                                <rect key="frame" x="574" y="308" width="190" height="21"/>
+                                <rect key="frame" x="580" y="339" width="190" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="VAw-Cm-Fn8">
-                                <rect key="frame" x="574" y="287" width="190" height="21"/>
+                                <rect key="frame" x="580" y="318" width="190" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="dN9-hd-JgU">
-                                <rect key="frame" x="772" y="116" width="190" height="21"/>
+                                <rect key="frame" x="778" y="147" width="190" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="kCZ-A2-zfT">
-                                <rect key="frame" x="772" y="138" width="190" height="21"/>
+                                <rect key="frame" x="778" y="169" width="190" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="yRf-AE-H9s">
-                                <rect key="frame" x="772" y="182" width="190" height="21"/>
+                                <rect key="frame" x="778" y="213" width="190" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="vo5-4B-Slb">
-                                <rect key="frame" x="772" y="161" width="190" height="21"/>
+                                <rect key="frame" x="778" y="192" width="190" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Dxm-eI-Rvq">
-                                <rect key="frame" x="772" y="203" width="190" height="21"/>
+                                <rect key="frame" x="778" y="234" width="190" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="4F9-iX-Hgc">
-                                <rect key="frame" x="772" y="224" width="190" height="21"/>
+                                <rect key="frame" x="778" y="255" width="190" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="uZf-CZ-CmE">
-                                <rect key="frame" x="772" y="245" width="190" height="21"/>
+                                <rect key="frame" x="778" y="276" width="190" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="qf0-OG-rze">
-                                <rect key="frame" x="772" y="267" width="190" height="21"/>
+                                <rect key="frame" x="778" y="298" width="190" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="xO1-d4-le3">
-                                <rect key="frame" x="772" y="287" width="190" height="21"/>
+                                <rect key="frame" x="778" y="318" width="190" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="aef-7i-Tua">
-                                <rect key="frame" x="772" y="308" width="190" height="21"/>
+                                <rect key="frame" x="778" y="339" width="190" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="k0W-j1-wG9">
-                                <rect key="frame" x="574" y="203" width="190" height="21"/>
+                                <rect key="frame" x="580" y="234" width="190" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <nil key="highlightedColor"/>
@@ -209,11 +209,11 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" image="product-laptop.png" id="KnX-zd-dh3">
-                                <rect key="frame" x="20" y="158" width="280" height="210"/>
+                                <rect key="frame" x="33" y="147" width="234" height="176"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="MJy-kX-Bwx">
-                                <rect key="frame" x="877" y="349" width="109" height="43"/>
+                                <rect key="frame" x="399" y="318" width="109" height="43"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" backgroundImage="button-check-04.png">
@@ -283,12 +283,12 @@
                         <rect key="frame" x="0.0" y="20" width="1024" height="748"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="scene 1.png" id="3dJ-ER-Ran">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="START SCREEN-09.png" id="3dJ-ER-Ran">
                                 <rect key="frame" x="0.0" y="0.0" width="1024" height="748"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="9FE-ce-duY">
-                                <rect key="frame" x="702" y="478" width="163" height="164"/>
+                                <rect key="frame" x="766" y="481" width="163" height="164"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" title="Start" image="button start-07.png">
                                     <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
@@ -599,26 +599,26 @@
                         <rect key="frame" x="0.0" y="20" width="1024" height="748"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="scene 5.png" id="Th3-O7-9cv">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="REVISI-07.png" id="Th3-O7-9cv">
                                 <rect key="frame" x="0.0" y="0.0" width="1024" height="748"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="text-area-background-08.png" id="eaO-fG-UZO">
-                                <rect key="frame" x="175" y="273" width="358" height="123"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="FIELD-07.png" id="eaO-fG-UZO">
+                                <rect key="frame" x="46" y="235" width="358" height="123"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" text="Vul antwoord in…" id="EMa-Dj-b2e">
-                                <rect key="frame" x="179" y="275" width="350" height="120"/>
+                                <rect key="frame" x="50" y="237" width="350" height="120"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Djk-0H-KL1">
-                                <rect key="frame" x="720" y="350" width="192" height="44"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Djk-0H-KL1">
+                                <rect key="frame" x="416" y="233" width="127" height="127"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" title="Button" image="klaar-button-16.png">
+                                <state key="normal" image="BUTTON KLAAR-08.png">
                                     <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -652,15 +652,15 @@
                         <rect key="frame" x="0.0" y="20" width="1024" height="748"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="scene 3-07.png" id="Vgz-tt-eKt">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="START GAME-12.png" id="Vgz-tt-eKt">
                                 <rect key="frame" x="0.0" y="-5" width="1024" height="758"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="WIe-CO-P2O">
-                                <rect key="frame" x="416" y="526" width="192" height="43"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="WIe-CO-P2O">
+                                <rect key="frame" x="436" y="433" width="152" height="153"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" title="Button" image="button-start-active-14.png">
+                                <state key="normal" title="Button" image="START BUTTON-13.png">
                                     <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -671,10 +671,6 @@
                                     <action selector="startButtonClicked:" destination="lWs-mk-1ES" eventType="touchUpInside" id="1i7-aR-xYh"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" image="product-laptop.png" id="baZ-xB-o3x">
-                                <rect key="frame" x="270" y="99" width="168" height="125"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
@@ -693,7 +689,7 @@
                         <rect key="frame" x="0.0" y="20" width="1024" height="748"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="scene 6.jpg" id="QRQ-j2-kLF">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="REVISI-07-08.png" id="QRQ-j2-kLF">
                                 <rect key="frame" x="0.0" y="0.0" width="1024" height="748"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
@@ -701,7 +697,7 @@
                                 <rect key="frame" x="709.5" y="449" width="168" height="169"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" title="Button" image="button-back-to-start-08.png">
+                                <state key="normal" title="Button" image="BUTTON-09.png">
                                     <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -768,26 +764,28 @@
     </scenes>
     <resources>
         <image name="1.png" width="81" height="58"/>
+        <image name="BUTTON KLAAR-08.png" width="147" height="147"/>
+        <image name="BUTTON-09.png" width="169" height="169"/>
+        <image name="FIELD-05.png" width="329" height="45"/>
+        <image name="FIELD-07.png" width="359" height="155"/>
+        <image name="PHOTO PAGE-11.png" width="1025" height="769"/>
+        <image name="REVISI-07-08.png" width="1025" height="769"/>
+        <image name="REVISI-07.png" width="1025" height="769"/>
+        <image name="START BUTTON-13.png" width="167" height="167"/>
+        <image name="START GAME-12.png" width="1025" height="769"/>
+        <image name="START SCREEN-09.png" width="1025" height="769"/>
         <image name="button start-07.png" width="167" height="167"/>
-        <image name="button-back-to-start-08.png" width="169" height="169"/>
         <image name="button-check-04.png" width="111" height="45"/>
         <image name="button-pick-image-10.png" width="117" height="116"/>
-        <image name="button-start-active-14.png" width="193" height="44"/>
         <image name="button-verder-inactive-13.png" width="194" height="44"/>
         <image name="button-verder-staan.png" width="111" height="45"/>
+        <image name="game background-05.png" width="1025" height="769"/>
         <image name="klaar-button-16.png" width="193" height="44"/>
         <image name="label-background-staan-03.png" width="285" height="67"/>
         <image name="label-product.png" width="134" height="28"/>
         <image name="product-laptop.png" width="280" height="210"/>
-        <image name="scene 1.png" width="1025" height="769"/>
-        <image name="scene 2.png" width="1025" height="769"/>
-        <image name="scene 3-07.png" width="1025" height="769"/>
         <image name="scene 3-2.png" width="1025" height="769"/>
-        <image name="scene 3.png" width="1025" height="770"/>
         <image name="scene 4.png" width="1025" height="769"/>
-        <image name="scene 5.png" width="1025" height="769"/>
-        <image name="scene 6.jpg" width="1025" height="769"/>
-        <image name="text-area-background-08.png" width="359" height="125"/>
         <image name="text-background.png" width="359" height="45"/>
     </resources>
     <classes>
