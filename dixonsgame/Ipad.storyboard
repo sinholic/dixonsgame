@@ -790,6 +790,123 @@
         <image name="text-area-background-08.png" width="359" height="125"/>
         <image name="text-background.png" width="359" height="45"/>
     </resources>
+    <classes>
+        <class className="DGDataViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/DGDataViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="doneViewList:"/>
+                <relationship kind="outlet" name="listOfDataInTextView" candidateClass="UITextView"/>
+            </relationships>
+        </class>
+        <class className="DGEighthViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/DGEighthViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="buttonBackToStartClicked:"/>
+            </relationships>
+        </class>
+        <class className="DGFifthViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/DGFifthViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="buttonCheckClicked:"/>
+                <relationship kind="action" name="textFieldEditBegin:"/>
+                <relationship kind="action" name="textFieldFinished:"/>
+                <relationship kind="outlet" name="buttonCheckText" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="labelProductName1" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="labelProductName10" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="labelProductName11" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="labelProductName12" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="labelProductName13" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="labelProductName14" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="labelProductName15" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="labelProductName16" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="labelProductName17" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="labelProductName18" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="labelProductName19" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="labelProductName2" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="labelProductName20" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="labelProductName3" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="labelProductName4" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="labelProductName5" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="labelProductName6" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="labelProductName7" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="labelProductName8" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="labelProductName9" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="labelWhatProduct" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="productImage" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="textFieldInputText" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="timeRemaining" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="DGFirstViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/DGFirstViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="buttonStart:"/>
+            </relationships>
+        </class>
+        <class className="DGFourthViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/DGFourthViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="startButtonClicked:"/>
+            </relationships>
+        </class>
+        <class className="DGSecondViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/DGSecondViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="birthdayChanged:"/>
+                <relationship kind="action" name="birthdayFinish:"/>
+                <relationship kind="action" name="personeelFinish:"/>
+                <relationship kind="action" name="submitButtonPressed:"/>
+                <relationship kind="outlet" name="birthdayText" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="personeelnummer" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="submitButton" candidateClass="UIButton"/>
+            </relationships>
+        </class>
+        <class className="DGSeventhViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/DGSeventhViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="buttonKlaarClicked:"/>
+                <relationship kind="outlet" name="submitButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="textFeedback" candidateClass="UITextView"/>
+            </relationships>
+        </class>
+        <class className="DGSixthViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/DGSixthViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="verderButtonClicked:"/>
+                <relationship kind="outlet" name="imageScore" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="labelFinish" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="labelProductName1" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="labelProductName10" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="labelProductName11" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="labelProductName12" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="labelProductName13" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="labelProductName14" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="labelProductName15" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="labelProductName16" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="labelProductName17" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="labelProductName18" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="labelProductName19" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="labelProductName2" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="labelProductName20" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="labelProductName3" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="labelProductName4" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="labelProductName5" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="labelProductName6" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="labelProductName7" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="labelProductName8" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="labelProductName9" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="DGThirdViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/DGThirdViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="browse_file_1:"/>
+                <relationship kind="action" name="submitButton:"/>
+                <relationship kind="outlet" name="buttonSubmit" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="firstImage" candidateClass="UIButton"/>
+            </relationships>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar" statusBarStyle="blackTranslucent"/>
         <simulatedOrientationMetrics key="orientation"/>
