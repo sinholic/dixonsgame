@@ -575,7 +575,7 @@
     } else {
         NSLog(@"string : %@",[self.currentProductSynonim objectForKey:string]);
         [self clickSound:@"false-answer" :@"wav"];
-        [self shakeView:self.view];
+//        [self shakeView:self.view];
     }
 }
 
