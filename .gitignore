@@ -34,3 +34,5 @@ UserInterfaceState.xcuserstate
 *.swp
 *.lock
 profile
+
+*.xcuserstate
