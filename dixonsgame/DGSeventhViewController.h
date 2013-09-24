@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import <MediaPlayer/MediaPlayer.h>
+#import <AVFoundation/AVFoundation.h>
 
 @interface DGSeventhViewController : UIViewController </*UIImagePickerControllerDelegate, UIActionSheetDelegate,*/ UIAlertViewDelegate, UITextViewDelegate>
 //- (IBAction)buttonVideoClicked:(id)sender;
@@ -15,5 +16,6 @@
 @property (weak, nonatomic) IBOutlet UITextView *textFeedback;
 //@property (weak, nonatomic) IBOutlet UIButton *buttonPickVideo;
 @property (weak, nonatomic) IBOutlet UIButton *submitButton;
+@property (weak, nonatomic) IBOutlet UILabel *timeRemaining;
 
 @end

@@ -7,15 +7,36 @@
 //
 
 #import "DGSeventhViewController.h"
-#import "AssetsLibrary/ALAssetRepresentation.h"
 #import "ALAssetsLibrary+CustomPhotoAlbum.h"
 
 @interface DGSeventhViewController ()
+@property NSTimer *countdownTimer;
+@property int secondsCount;
 @property (strong, atomic) ALAssetsLibrary* library;
+@property AVAudioPlayer *backSound;
 @property NSUserDefaults *sharedData;
 @end
 
 @implementation DGSeventhViewController
+
+- (void)countTimer {
+    self.secondsCount = 60;
+    self.countdownTimer = [NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(timerRun) userInfo:nil repeats:YES];
+}
+
+- (void)timerRun {
+    self.secondsCount = self.secondsCount - 1;
+    NSString *timeRemaining = [NSString stringWithFormat:@"%2d", self.secondsCount];
+    self.timeRemaining.text = timeRemaining;
+    if (self.secondsCount == 0) {
+        [self.backSound stop];
+        if ([self.textFeedback.text isEqualToString:@"Vul antwoord in…"]) {
+            self.textFeedback.text = @"No comments";
+        }
+        [self finishTheGame];
+    }
+}
+
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -26,9 +47,25 @@
     return self;
 }
 
+- (void)backsoundPlay : (NSString *)fileName : (NSString *)fileType : (BOOL)loop {
+    NSURL* musicFile = [NSURL fileURLWithPath:[[NSBundle mainBundle]
+                                               pathForResource:fileName
+                                               ofType:fileType]];
+    self.backSound = [[AVAudioPlayer alloc] initWithContentsOfURL:musicFile error:nil];
+    self.backSound.delegate = (id)self;
+    [self.backSound prepareToPlay];
+    [self.backSound play];
+    self.backSound.volume = 0.5;
+    if (loop) {
+        self.backSound.numberOfLoops = -1;
+    }
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    [self countTimer];
+    [self backsoundPlay:@"timer-sound_mixdown" :@"wav" :YES];
     self.textFeedback.delegate = self;
     self.submitButton.enabled = NO;
     self.library = [[ALAssetsLibrary alloc] init];
@@ -129,6 +166,7 @@
 }
 
 - (void)finishTheGame {
+    [self.backSound stop];
     if ([self.textFeedback.text isEqualToString:@"Vul antwoord in…"]) {
         UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Error" message:@"Vul antwoord in." delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
         [alert show];

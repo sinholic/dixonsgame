@@ -53,7 +53,10 @@
     if ([textOnTextView isEqual:@""]) {
         textOnTextView = @"\n";
     }
-    NSString *textThatWillOnTextView = [NSString stringWithFormat:@"%@Personeel nummer : %@\n Geboordedatum : %@\n Total correct answers : %@\n Feedback : %@\n=========================\n",textOnTextView,[self.sharedData objectForKey:@"personeelnummer"], [self.sharedData objectForKey:@"birthday"],[self.sharedData objectForKey:@"totalCorrectAnswers"], [self.sharedData objectForKey:@"feedback"]];
+    if ([[self.sharedData objectForKey:@"album"] isEqualToString:@""]) {
+        [self.sharedData setObject:@"" forKey:@"album"];
+    }
+    NSString *textThatWillOnTextView = [NSString stringWithFormat:@"%@Personeel nummer : %@\nGeboordedatum : %@\nTotal correct answers : %@\nFeedback : %@\nMedia library folder : %@\n=========================\n",textOnTextView,[self.sharedData objectForKey:@"personeelnummer"], [self.sharedData objectForKey:@"geboortedatum"],[self.sharedData objectForKey:@"totalCorrectAnswers"], [self.sharedData objectForKey:@"feedback"], [self.sharedData objectForKey:@"album"]];
     [self.sharedData setObject:textThatWillOnTextView forKey:@"textOnDataView"];
     UIStoryboard *storyboard;
     storyboard = [UIStoryboard storyboardWithName:@"Ipad" bundle:nil];

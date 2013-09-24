@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		01263C2A17F161B00086BCD5 /* comment page-07.png in Resources */ = {isa = PBXBuildFile; fileRef = 01263C2817F161B00086BCD5 /* comment page-07.png */; };
+		01263C2B17F161B00086BCD5 /* camera page-09.png in Resources */ = {isa = PBXBuildFile; fileRef = 01263C2917F161B00086BCD5 /* camera page-09.png */; };
 		013A843717E9BEE100BC42ED /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = 013A842217E9BEE000BC42ED /* 1.png */; };
 		013A843817E9BEE100BC42ED /* 2.png in Resources */ = {isa = PBXBuildFile; fileRef = 013A842317E9BEE000BC42ED /* 2.png */; };
 		013A843917E9BEE100BC42ED /* 3.png in Resources */ = {isa = PBXBuildFile; fileRef = 013A842417E9BEE000BC42ED /* 3.png */; };
@@ -106,6 +108,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		01263C2817F161B00086BCD5 /* comment page-07.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "comment page-07.png"; sourceTree = "<group>"; };
+		01263C2917F161B00086BCD5 /* camera page-09.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "camera page-09.png"; sourceTree = "<group>"; };
 		013A842217E9BEE000BC42ED /* 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1.png; sourceTree = "<group>"; };
 		013A842317E9BEE000BC42ED /* 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 2.png; sourceTree = "<group>"; };
 		013A842417E9BEE000BC42ED /* 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 3.png; sourceTree = "<group>"; };
@@ -433,6 +437,8 @@
 		01AF012817F03F6500E5F25F /* Image Revision */ = {
 			isa = PBXGroup;
 			children = (
+				01263C2817F161B00086BCD5 /* comment page-07.png */,
+				01263C2917F161B00086BCD5 /* camera page-09.png */,
 				01AF014117F041BD00E5F25F /* game background-05.png */,
 				01AF012917F03F7F00E5F25F /* BUTTON CHECK-06.png */,
 				01AF012A17F03F7F00E5F25F /* BUTTON DOOMEE-10.png */,
@@ -453,9 +459,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		0187A1FC17E820A7003219A5 /* dixonsgame */ = {
+		0187A1FC17E820A7003219A5 /* Dixons Game */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0187A21A17E820A7003219A5 /* Build configuration list for PBXNativeTarget "dixonsgame" */;
+			buildConfigurationList = 0187A21A17E820A7003219A5 /* Build configuration list for PBXNativeTarget "Dixons Game" */;
 			buildPhases = (
 				0187A1F917E820A7003219A5 /* Sources */,
 				0187A1FA17E820A7003219A5 /* Frameworks */,
@@ -465,7 +471,7 @@
 			);
 			dependencies = (
 			);
-			name = dixonsgame;
+			name = "Dixons Game";
 			productName = dixonsgame;
 			productReference = 0187A1FD17E820A7003219A5 /* dixonsgame.app */;
 			productType = "com.apple.product-type.application";
@@ -492,7 +498,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				0187A1FC17E820A7003219A5 /* dixonsgame */,
+				0187A1FC17E820A7003219A5 /* Dixons Game */,
 			);
 		};
 /* End PBXProject section */
@@ -576,6 +582,8 @@
 				01AF013F17F03F7F00E5F25F /* START GAME-12.png in Resources */,
 				01AF014017F03F7F00E5F25F /* START SCREEN-09.png in Resources */,
 				01AF014217F041BD00E5F25F /* game background-05.png in Resources */,
+				01263C2A17F161B00086BCD5 /* comment page-07.png in Resources */,
+				01263C2B17F161B00086BCD5 /* camera page-09.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -629,8 +637,8 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer: HJM van der Lubbe (HPZ34GFT4H)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: HJM van der Lubbe (HPZ34GFT4H)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Mahar Prasetio (VRJJW628QP)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Mahar Prasetio (VRJJW628QP)";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -645,8 +653,8 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				ONLY_ACTIVE_ARCH = YES;
-				PROVISIONING_PROFILE = "4CA9F7A0-765F-4A1A-8958-0AED312AB3C2";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "AB9CFE24-BCF4-4DDF-9C37-DF54ADA35B7E";
+				PROVISIONING_PROFILE = "94041427-B799-4708-93C0-1E22723D7369";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "94041427-B799-4708-93C0-1E22723D7369";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = 2;
 			};
@@ -664,8 +672,8 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: iCentre BV";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: iCentre BV";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Mahar Prasetio (VRJJW628QP)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Mahar Prasetio (VRJJW628QP)";
 				COPY_PHASE_STRIP = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
@@ -673,8 +681,8 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
-				PROVISIONING_PROFILE = "96107640-D0AE-4535-AAC8-22400DE44A3F";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "96107640-D0AE-4535-AAC8-22400DE44A3F";
+				PROVISIONING_PROFILE = "94041427-B799-4708-93C0-1E22723D7369";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "94041427-B799-4708-93C0-1E22723D7369";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = 2;
 				VALIDATE_PRODUCT = YES;
@@ -725,7 +733,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		0187A21A17E820A7003219A5 /* Build configuration list for PBXNativeTarget "dixonsgame" */ = {
+		0187A21A17E820A7003219A5 /* Build configuration list for PBXNativeTarget "Dixons Game" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0187A21B17E820A7003219A5 /* Debug */,

@@ -19,4 +19,5 @@
 //@property (nonatomic) IBOutlet UIButton *secondImage;
 //@property (nonatomic) IBOutlet UIButton *thirdImage;
 @property (weak, nonatomic) IBOutlet UIButton *buttonSubmit;
+@property (weak, nonatomic) IBOutlet UILabel *timeRemaining;
 @end
