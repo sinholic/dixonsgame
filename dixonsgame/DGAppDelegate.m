@@ -91,4 +91,25 @@
 	}
 }
 
+
+- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex {
+    
+    NSLog(@"%i",buttonIndex);
+    if (buttonIndex == 1 ) {
+        
+
+        
+        NSURL *appURL = [NSURL URLWithString: [@"itms-services://?action=download-manifest&url=https://www.basgroup.nu/wp-content/uploads/dixonsgame.plist" stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding]];
+        
+        if ([[UIApplication sharedApplication] canOpenURL:appURL]) {
+            [[UIApplication sharedApplication] openURL:appURL];
+        } else {
+            NSLog(@"cannot open?");
+        }
+    }
+    
+}
+
+
+
 @end
