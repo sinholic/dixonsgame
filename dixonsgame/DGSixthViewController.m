@@ -43,13 +43,10 @@
     [super viewDidLoad];
     [self playMusic:@"win-the-game" :@"wav":NO];
     self.sharedData = [NSUserDefaults standardUserDefaults];
-    if (!self.totalCorrectAnswer) {
-        self.totalCorrectAnswer = 0;
-    }
-    NSString *objectForTotalCorrectAnswers = [NSString stringWithFormat:@"%i",  self.totalCorrectAnswer];
+    NSString *objectForTotalCorrectAnswers = [NSString stringWithFormat:@"%i",  self.currentCorrectAnswerFromFifthView.count];
     [self.sharedData setObject:objectForTotalCorrectAnswers forKey:@"totalCorrectAnswers"];
-    self.labelFinish.text = [NSString stringWithFormat:@"Je hebt %i producten geraden die je kan bijverkopen voor de %@!", self.totalCorrectAnswer, self.currentProductName];
-    self.imageScore.image = [UIImage imageNamed:[NSString stringWithFormat:@"%i.png", self.totalCorrectAnswer]];
+    self.labelFinish.text = [NSString stringWithFormat:@"Je hebt %@ producten geraden die je kan bijverkopen voor de %@!", objectForTotalCorrectAnswers, self.currentProductName];
+    self.imageScore.image = [UIImage imageNamed:[NSString stringWithFormat:@"%@.png", objectForTotalCorrectAnswers]];
     for (int i = 0; i < self.currentProductDisplayNameFromFifthView.count; i++) {
         if (self.currentCorrectAnswerFromFifthView != nil && [self.currentCorrectAnswerFromFifthView objectForKey:[self.currentProductDisplayNameFromFifthView objectAtIndex:i]]) {
             [self putDataToLabel:[self.currentProductDisplayNameFromFifthView objectAtIndex:i] :i :@"bold"];

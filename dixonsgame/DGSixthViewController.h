@@ -10,7 +10,6 @@
 #import <AVFoundation/AVFoundation.h>
 
 @interface DGSixthViewController : UIViewController <AVAudioPlayerDelegate>
-@property int totalCorrectAnswer;
 @property NSString *currentProductName;
 @property NSArray *currentProductDisplayNameFromFifthView;
 @property NSDictionary *currentCorrectAnswerFromFifthView;

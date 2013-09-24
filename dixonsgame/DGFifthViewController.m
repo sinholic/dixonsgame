@@ -12,7 +12,6 @@
 @interface DGFifthViewController ()
 @property NSTimer *countdownTimer;
 @property int secondsCount;
-@property int totalCorrectAnswer;
 @property NSArray *productIpadDisplayName;
 @property NSArray *productLaptopDisplayName;
 @property NSArray *productDesktopDisplayName;
@@ -46,7 +45,6 @@
         DGSixthViewController *sixthViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"SixthView"];
         sixthViewController.currentCorrectAnswerFromFifthView = self.currentCorrectProductAnswer;
         sixthViewController.currentProductDisplayNameFromFifthView = self.currentProductDisplayName;
-        sixthViewController.totalCorrectAnswer = self.totalCorrectAnswer;
         sixthViewController.currentProductName = self.labelWhatProduct.text;
         [self presentViewController:sixthViewController animated:YES completion:nil];
     }
@@ -568,7 +566,6 @@
         [self clickSound:@"true-answer" :@"wav"];
         int index = [[self.currentProductSynonim objectForKey:string] intValue];
         [self.currentCorrectProductAnswer setObject:@"true" forKey:[self.currentProductDisplayName objectAtIndex: index]];
-        self.totalCorrectAnswer += 1;
         NSLog(@"index : %@", [self.currentProductSynonim objectForKey:string]);
         NSLog(@"object at index : %@", [self.currentProductDisplayName objectAtIndex: index]);
         [self putDataToLabel:[self.currentProductDisplayName objectAtIndex: index] :index];
